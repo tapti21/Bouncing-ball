@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSs Bouncing Ball</title>
+ 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div
+        {
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div ul
+        {
+            display: flex;
+            border-bottom: 10px solid whitesmoke;
+        }
+        div ul li
+        {
+            background-color: black;
+            width: 70px;
+            height: 70px;
+            list-style: none;
+            margin: 0 10px;
+            border-radius: 50px;
+            animation:  bouncy 1s linear infinite;
+        }
+        @keyframes bouncy
+        {
+            0%{transform: translateY(0);}
+            50%{transform: translateY(-150px);}
+            100%{transform: translateY(0);}
+        }
+        ul li:nth-child(1)
+        {
+            animation-delay: 0.2s;
+            background-color: #FF1BF5;
+        }
+        ul li:nth-child(2)
+        {
+            animation-delay: 0.6s;
+            background-color:#FBFF00 ;
+        }
+        ul li:nth-child(3)
+        {
+            animation-delay: 0.4s;
+            background-color:#2BFFE9 ;
+        }
+        ul li:nth-child(4)
+        {
+            animation-delay: 0.8s;
+            background-color:#19FF1BF5 ;
+        }
+        ul li:nth-child(5)
+        {
+            animation-delay: 0.2s;
+            background-color:#FF5C6E ;
+        }
+    </style>
+</head> 
+ <body>
+    <center>
+    <font size="10" color="red"<b>Bouncing Ball</b></font>
+
+</center>
+    <div>
+    <ul>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+        </ul> 
+    </div> 
+ 
+</body>
+</html>
